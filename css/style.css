@@ -1,0 +1,102 @@
+/* Global Style */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    background-color: #F7ECDE;
+    /* font-family: 'Pacifico', cursive;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-family: 'Righteous', sans-serif; */
+}
+:root{
+    --main-color:#FEC260;
+}
+::selection{
+    background-color: var(--main-color);
+}      
+ul{
+    list-style: none;
+}
+/* Body Style */
+
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
+h1::before{
+    content: '';
+    position: absolute;
+    width: 265px;
+    height: 35%;
+    left: 40%;
+    bottom: 0;
+    background-color: var(--main-color);
+    z-index: -1;
+    transition: height 0.5s;
+}
+h1:hover::before{
+    height: 65%;
+}
+.bookMarkBody{
+    border-width: 2px 0 ;
+    border-style: dotted;
+    border-color: #352e28;
+}
+.bookMarkBody h2 {
+    font-size: 25px;
+    font-family: 'Righteous', sans-serif; 
+    font-weight: 500;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    /* -webkit-text-fill-color: transparent; */
+    /* -webkit-background-clip: content-box; */
+    /* background: -webkit-linear-gradient(#3ca55c, #b5ac49); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bookMarkBody div label p{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.bookMarkBody .sub{
+    background-color: #d1512d;
+    color: white;
+}
+.bookMarkBody .sub:hover{
+    background-color: #bb4120;
+    color: white;
+}
+.bookMarkBody input{
+    border: 1px solid #ced4da;
+} 
+ .bookMarkBody input:focus{
+    border-color: #d99c39;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+    outline: 0;
+}
+.bookMarkBody .box{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.bookMarkBody .box .box-header .circles span{
+    width: 20px;
+    height: 20px;
+}
+.bookMarkBody .box .box-header .circles span:nth-child(1){
+    background-color: #f15f5d;
+}
+.bookMarkBody .box .box-header .circles span:nth-child(2){
+    background-color: #febe2e;
+}
+.bookMarkBody .box .box-header .circles span:nth-child(3){
+    background-color: #4db748;
+}
+.bookMarkBody .modal .foot i{
+   color: #bb4120;
+}
+table thead th{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
