@@ -4,11 +4,12 @@
     box-sizing: border-box;
 }
 body{
-   
+
     background-color: #F7ECDE;
-    /* font-family: 'Pacifico', cursive;
+       /* font-family: 'Pacifico', cursive;
     font-family: 'PT Sans Caption', sans-serif;
     font-family: 'Righteous', sans-serif; */
+
 }
 :root{
     --main-color:#FEC260;
@@ -30,7 +31,7 @@ h1::before{
     position: absolute;
     width: 265px;
     height: 35%;
-    left: 40%;
+    /* left: 40%; */
     bottom: 0;
     background-color: var(--main-color);
     z-index: -1;
